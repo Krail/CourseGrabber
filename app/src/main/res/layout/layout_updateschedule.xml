@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/updateschedule_background" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1.0">
+        <Space
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="0px" />
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:weightSum="1.0">
+            <Space
+                android:layout_weight="0.4"
+                android:layout_width="0px"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_weight="0.1"
+                android:id="@+id/coursegrabbertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                style="@style/CourseGrabberText"
+                android:text="@string/caps_coursegrabber" />
+            <ImageView
+                android:layout_weight="0.1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/ship"
+                android:padding="0px"
+                android:src="@drawable/ic_launcher"
+                android:visibility="gone"/>
+            <Space
+                android:layout_weight="0.4"
+                android:layout_width="0px"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_weight="0.1"
+            android:id="@+id/updateScheduleStringTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/UpdateScheduleText"
+            android:text="@string/updateschedule_string" />
+        <RelativeLayout
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <EditText
+                android:id="@+id/updateScheduleUsernameEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="end"
+                android:ems="9"
+                android:maxLength="18"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:cursorVisible="false"
+                android:imeOptions="actionNext"
+                android:hint="@string/your_udelnet_id" >
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/updateScheduleUsernameEditText"
+                android:layout_alignBaseline="@id/updateScheduleUsernameEditText"
+                android:text="@string/udelnetid" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/updateScheduleUsernameEditText"
+                android:layout_toEndOf="@id/updateScheduleUsernameEditText"
+                android:text="@string/udel_edu" />
+            <EditText
+                android:id="@+id/updateSchedulePasswordEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateScheduleUsernameEditText"
+                android:layout_alignStart="@id/updateScheduleUsernameEditText"
+                android:inputType="textPassword"
+                android:gravity="end"
+                android:ems="12"
+                android:maxLength="21"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:cursorVisible="false"
+                android:imeOptions="actionSend"
+                android:hint="@string/your_password" >
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/updateScheduleUsernameEditText"
+                android:layout_alignBaseline="@id/updateSchedulePasswordEditText"
+                android:text="@string/password"
+                android:id="@+id/textView" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+            <Space
+                android:layout_weight="0.2"
+                android:layout_width="0px"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_weight="0.2"
+                android:id="@+id/updateScheduleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:alpha="0.8"
+                android:text="@string/updateschedule_button"
+                android:visibility="visible" /> <!--android:background="@drawable/button"-->
+            <Space
+                android:layout_weight="0.05"
+                android:layout_width="0px"
+                android:layout_height="wrap_content" />
+            <ProgressBar
+                android:layout_weight="0.6"
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleLarge"
+                android:visibility="gone" />
+            <Space
+                android:layout_weight="0.05"
+                android:layout_width="0px"
+                android:layout_height="wrap_content" />
+            <Button
+                android:layout_weight="0.2"
+                android:id="@+id/updateSettingsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:alpha="0.8"
+                android:text="@string/updatesettings_button"
+                android:visibility="visible" /> <!--android:background="@drawable/button"-->
+            <Space
+                android:layout_weight="0.2"
+                android:layout_width="0px"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <Space
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="0px" />
+    </LinearLayout>
+</RelativeLayout>

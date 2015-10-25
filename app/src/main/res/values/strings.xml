@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CourseGrabber</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- CONSTANT STRINGS -->
+    <string name="preference_file_key">com.seankrail.coursegrabber.PREFERENCE_FILE_KEY</string>
+    <!--UpdateActivity-->
+    <string name="caps_coursegrabber">CourseGrabber</string>
+    <string name="ship">ship</string>
+    <string name="updateschedule_string">Update Your UD Schedule</string>
+    <string name="updateschedule_button">Update Schedule</string>
+    <string name="updatesettings_button">Update Settings</string>
+    <string name="savesettings_button">Save Settings</string>
+    <string name="udelnetid">udelnetid:</string>
+    <string name="your_udelnet_id">your udelnet id</string>
+    <string name="udel_edu">\@udel.edu</string>
+    <string name="password">password:</string>
+    <string name="your_password">your password</string>
+    <!-- RemindersActivity -->
+    <string name="remindersTextView">Want reminders?</string>
+    <string name="remindersON">YES</string>
+    <string name="remindersOFF">NO</string>
+
+    <!-- CONSTANT COLORS -->
+    <color name="cg_blue">#00C8FF</color>
+    <color name="cg_turquiose">#00FFFF</color>
+    <color name="cg_green">#96C832</color>
+    <color name="cg_magenta">#FF0096</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="dark_grey">#666666</color>
+
+</resources>
