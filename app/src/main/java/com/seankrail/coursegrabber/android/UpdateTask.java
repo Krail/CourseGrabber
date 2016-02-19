@@ -67,7 +67,6 @@ public class UpdateTask extends AsyncTask<String, String, Boolean> {
     //private static final String CSVURL = "http://www.seankrail.com/assets/data/coursegrabber/mycalendar-2155.csv"; // My Summer 2015 Schedule
     //private static final String CSVURL = "http://www.seankrail.com/assets/data/coursegrabber/mycalendar-2158.csv"; // My Fall 2015 Schedule
     private static final String CSVURL = "https://udapps.nss.udel.edu/registration/exportCalendar?type=CSV"; // My Fall 2015 Schedule
-    //private static final String LOGINURL = "https://skrail:Impression4g@cas.nss.udel.edu/cas/login";
     //private static final String LOGINURL = "https://cas.nss.udel.edu/cas/login";
     private static final String LOGINURL = "https://cas.nss.udel.edu/cas/login?service=https%3A%2F%2Fudapps.nss.udel.edu%2Fregistration%2Fj_spring_cas_security_check";
 
