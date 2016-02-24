@@ -15,5 +15,6 @@ public class CourseGrabberApplication extends android.app.Application {
     @Override
     public void onCreate() {
         // do nothing, calls UpdateActivity's onCreate method after this
+        super.onCreate();
     }
 }

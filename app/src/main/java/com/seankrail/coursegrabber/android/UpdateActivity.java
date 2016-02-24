@@ -115,7 +115,10 @@ public class UpdateActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Log.i(TAG, "Update schedule btnSchedule clicked");
-                (new UpdateTask((UpdateActivity) (v.getContext()))).execute();
+                UpdateActivity context = (UpdateActivity) v.getContext();
+                String username = ((EditText) findViewById(R.id.updateScheduleUsernameEditText)).getText().toString();
+                String password = ((EditText) findViewById(R.id.updateSchedulePasswordEditText)).getText().toString();
+                (new UpdateTask(context, username, password)).execute();
 
                 // Update Calendar with UpdateTask.java
                 showSpinner();
