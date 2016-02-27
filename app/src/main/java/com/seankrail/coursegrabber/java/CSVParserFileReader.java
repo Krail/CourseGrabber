@@ -32,12 +32,12 @@ public class CSVParserFileReader {
         try {
             br = new BufferedReader(new FileReader(csv));
             line = br.readLine();
-            Log.i(TAG + ".CSVParser", "Line: " + line);
+            //Log.i(TAG + ".CSVParser", "Line: " + line);
             while ((line = br.readLine()) != null) {
                 String[] entities = line.split(split);
                 //                       (  subject  , start date , start time ,  end date  ,  end time  ,   all day  ,  location  )
                 this.events.add(new Event(entities[0], entities[1], entities[2], entities[3], entities[4], entities[5], entities[6]));
-                Log.i(TAG, "Wrote event from line: "+line);
+                //Log.i(TAG, "Wrote event from line: "+line);
             }
 
         } catch (FileNotFoundException e) {

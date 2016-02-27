@@ -247,7 +247,7 @@ public class UpdateActivity extends Activity {
     }
 
     public void updateUI() {
-        title.setText("CoursesGrabbed");
+        title.setText("Courses Grabbed");
         title.setGravity(Gravity.CENTER);
         subject.setText("Your schedule is up-to-date");
         subject.setGravity(Gravity.CENTER);

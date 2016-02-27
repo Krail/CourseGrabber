@@ -33,11 +33,11 @@ public class Event {
 
         // Locations are in the format 'MEM106' or 'MEM106A'
         if (location.length() == 6 || location.length() == 7) {
-            Log.i(TAG, "Location: '" + location + "' Building: '" + location.substring(0, 3) + "'");
+            //Log.i(TAG, "Location: '" + location + "' Building: '" + location.substring(0, 3) + "'");
             BuildingEnum be = null;
             for (BuildingEnum b : BuildingEnum.values()) {if (b.name().contentEquals(location.substring(0, 3))) be = b;}
             if (be == null) {
-                Log.i(TAG, "Invalid BuildingEnum: " + location.substring(0, 3));
+                //Log.i(TAG, "Invalid BuildingEnum: " + location.substring(0, 3));
                 this.location = location;
             } else if (location.length() == 6) {
                 Classroom classroom = new Classroom(new Building(be), Short.parseShort(location.substring(3, 6)), '~');

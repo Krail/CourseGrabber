@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">CourseGrabber</string>
+    <string name="app_name">Course Grabber</string>
     <string name="action_settings">Settings</string>
 
     <!-- CONSTANT STRINGS -->
     <string name="preference_file_key">com.seankrail.coursegrabber.PREFERENCE_FILE_KEY</string>
     <!--UpdateActivity-->
-    <string name="caps_coursegrabber">CourseGrabber</string>
+    <string name="caps_coursegrabber">Course Grabber</string>
+    <string name="caps_coursegrabber_portrait">Course\nGrabber</string>
+    <string name="caps_coursegrabber_landscape">Course Grabber</string>
     <string name="ship">ship</string>
     <string name="updateschedule_string">Update Your UD Schedule</string>
     <string name="updateschedule_button">Update Schedule</string>
